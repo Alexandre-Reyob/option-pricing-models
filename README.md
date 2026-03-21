@@ -14,18 +14,17 @@ I'm a student in the Quantitative Finance track at CentraleSupélec. This reposi
 - **Bates**: combines Heston and Merton (stochastic volatility + jumps)
 - **Longstaff-Schwartz**: regression-based pricing for American options
 - **Implied volatility**: extracting volatility smiles from simulated prices
-
+ 
 ## Project structure
-src/ # core modules (models, Monte Carlo engine, utils)
-notebooks/ # Jupyter notebooks with examples and analysis
-requirements.txt # Python dependencies
-
+- src/ # core modules (models, Monte Carlo engine, utils)
+- notebooks/ # Jupyter notebooks with examples and analysis
+- requirements.txt # Python dependencies
 
 ## Getting started
-git clone https://github.com/Alexandre-Reyob/option-pricing-models.git
-cd option-pricing-models
-pip install -r requirements.txt
-jupyter notebook notebooks/
+- git clone https://github.com/Alexandre-Reyob/option-pricing-models.git
+- cd option-pricing-models
+- pip install -r requirements.txt
+- jupyter notebook notebooks/
 
 ## Notebooks
 The notebooks are numbered in a logical order:
