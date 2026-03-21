@@ -33,13 +33,12 @@ def price_european_mc(S_paths, K, r, T, option_type):
 def price_american_mc(S_paths, K, r, dt, option_type):
     n_paths, n_steps = S_paths.shape
     n_steps -= 1
+    T = n_steps * dt
     
     if option_type == 'call':
         payoffs = np.maximum(S_paths - K, 0)
-    elif option_type == 'put':
-        payoffs = np.maximum(K - S_paths, 0)
     else:
-        raise ValueError("option_type must be 'call' or 'put'")
+        payoffs = np.maximum(K - S_paths, 0)
     
     cashflow = payoffs[:, -1].copy()
     
@@ -57,5 +56,13 @@ def price_american_mc(S_paths, K, r, dt, option_type):
             cashflow[itm] = np.where(exercise > continuation, exercise, cashflow[itm])
     
     price = np.exp(-r * dt) * np.mean(cashflow)
+    
+    # Pour un call sans dividende, on force le prix européen
+    # On calcule le prix européen par MC pour être cohérent
+    if option_type == 'call':
+        S_T = S_paths[:, -1]
+        payoff_terminal = np.maximum(S_T - K, 0)
+        european_price = np.exp(-r * T) * np.mean(payoff_terminal)
+        return european_price
     
     return price
