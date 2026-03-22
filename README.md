@@ -1,10 +1,10 @@
 # Option Pricing Models
 
-This project implements several option pricing models that I built while studying quantitative finance at CentraleSupélec. It's a hands-on way to explore the concepts I come across in class and during my internship.
+This project implements several option pricing models that I built while learning about quantitative finance. It's a hands-on way to explore the concepts I come across in my learning and during my internship.
 
 ## About this project
 
-I'm a student in the Quantitative Finance track at CentraleSupélec. This repository is my attempt to put into practice what I learn about stochastic modeling, Monte Carlo methods, and financial derivatives. The code here reflects my understanding of how pricing models work under the hood.
+I'm a student at CentraleSupélec. This repository is my attempt to put into practice what I learn about stochastic modeling, Monte Carlo methods, and financial derivatives. The code here reflects my understanding of how pricing models work under the hood.
 
 ## Models implemented
 
