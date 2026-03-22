@@ -35,5 +35,5 @@ American options and the Longstaff-Schwartz algorithm
 Volatility smiles from Heston simulations
 
 ## About me
-I'm Alexandre Boyer, a student at CentraleSupélec, a French engineering school. I built this project to deepen my understanding of the models used in trading desks and asset management. It's not meant for production use, it was just a learning exercise that I'm happy to share.
+I'm Alexandre Boyer, a student at CentraleSupélec, a French engineering school currently interning at BNP Paribas as a Quant Researcher. I built this project to deepen my understanding of the models used in trading desks and asset management. It's not meant for production use, it was just a learning exercise that I'm happy to share.
 
